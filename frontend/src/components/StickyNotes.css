@@ -1,0 +1,127 @@
+.sticky-notes-container {
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+    transition: all 0.3s ease;
+}
+
+.note-input {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.note-input input[type="text"] {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.note-input button {
+    padding: 10px 20px;
+    background-color: rgb(53, 59, 53);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.note-input button:hover {
+    background-color: hsl(0, 0%, 0%);
+}
+
+.notes-area {
+    position: relative;
+    height: calc(300vh - 20px);
+    border: none;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.note {
+    position: absolute;
+    width: 220px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    background-color: #fff;
+    user-select: none;
+    transition: all 0.3s ease;
+}
+
+.note:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.note-handle {
+    padding: 10px;
+    background-color: rgba(0,0,0,0.05);
+    border-radius: 10px 10px 0 0;
+    cursor: move;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.note textarea {
+    width: 100%;
+    min-height: 100px;
+    border: none;
+    background: transparent;
+    resize: vertical;
+    font-family: 'Handlee', cursive;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 10px 0;
+    box-sizing: border-box;
+}
+
+.note.expanded {
+    width: 320px;
+    height: auto;
+}
+
+.note.expanded textarea {
+    min-height: 230px;
+}
+
+.note-footer {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.note-actions button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 5px;
+    font-size: 14px;
+    color: inherit;
+    transition: transform 0.3s ease;
+}
+
+.note-actions button:hover {
+    transform: scale(1.2);
+}
+
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.react-draggable-dragging {
+    transition: none !important;
+    z-index: 1000;
+}

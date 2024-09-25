@@ -1,0 +1,44 @@
+.footer {
+    background-color: #282c34; /* Dark background */
+    color: white; /* White text */
+    padding: 20px 0; /* Padding for the footer */
+    text-align: center; /* Center text */
+}
+
+.footer-socials {
+    display: flex; /* Flexbox for social icons */
+    justify-content: center; /* Center the icons */
+    margin-bottom: 15px; /* Space below social icons */
+}
+
+.social-icon {
+    color: white; /* Icon color */
+    font-size: 24px; /* Icon size */
+    margin: 0 10px; /* Spacing between icons */
+    transition: color 0.3s; /* Transition for hover effect */
+}
+
+.social-icon:hover {
+    color: #61dafb; /* Change color on hover */
+}
+
+.footer-links {
+    display: flex; /* Flexbox for links */
+    justify-content: center; /* Center the links */
+    margin-bottom: 15px; /* Space below links */
+}
+
+.footer-link {
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline */
+    margin: 0 15px; /* Spacing between links */
+    transition: color 0.3s; /* Transition for hover effect */
+}
+
+.footer-link:hover {
+    color: #61dafb; /* Change color on hover */
+}
+
+.footer-bottom {
+    margin-top: 20px; /* Space above copyright text */
+}
