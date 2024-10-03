@@ -95,7 +95,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'Sticky',
         'USER': 'root',
-        'PASSWORD': 'bdKxUOp9834!',
+        'PASSWORD': '*',
         'HOST': 'localhost',  
         'PORT': '3306', 
     }
@@ -156,7 +156,7 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587  
 EMAIL_USE_TLS = True  
 EMAIL_HOST_USER = 'abrorhilmi6@gmail.com'
-EMAIL_HOST_PASSWORD = 'verb epet dndf ivxz'
+EMAIL_HOST_PASSWORD = '*'
 DEFAULT_FROM_EMAIL = 'noreply@reset.com'
 
 
